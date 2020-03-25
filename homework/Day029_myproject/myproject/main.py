@@ -4,7 +4,7 @@ from scrapy.utils.project import get_project_settings
 
 
 def main():
-    target_board = ['Gossiping', 'Stock']
+    target_board = ['Stock']
     process = CrawlerProcess(get_project_settings())
     for board in target_board:
         process.crawl('PTTCrawler', board=board)
